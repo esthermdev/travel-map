@@ -1,0 +1,59 @@
+{
+  "locations": [
+    {
+      "latitude": 38.305542,
+      "longitude": -30.384108,
+      "name_of_location": "Azores",
+      "description": "A beautiful archipelago of Portugal.",
+      "photos": [
+        "static/images/azores_1.jpg",
+        "static/images/azores_2.jpg",
+        "static/images/azores_3.jpg"
+      ]
+    },
+    {
+      "latitude": 38.736946,
+      "longitude": -9.142685,
+      "name_of_location": "Lisbon",
+      "description": "A beautiful city in Portugal.",
+      "photos": [
+        "static/images/lisbon_1.jpg",
+        "static/images/lisbon_2.jpg",
+        "static/images/lisbon_3.jpg"
+      ]
+    },
+    {
+      "latitude": 43.680031,
+      "longitude": -70.310425,
+      "name_of_location": "Portland",
+      "description": "A beautiful city in Maine.",
+      "photos": [
+        "static/images/portland_1.jpg",
+        "static/images/portland_2.jpg",
+        "static/images/portland_3.jpg"
+      ]
+    },
+    {
+      "latitude": 35.884445,
+      "longitude": 14.506944,
+      "name_of_location": "Valetta",
+      "description": "A beautiful city in Malta",
+      "photos": [
+        "static/images/malta_1.jpg",
+        "static/images/malta_2.jpg",
+        "static/images/malta_3.jpg"
+      ]
+    },
+    {
+      "latitude": 49.611622,
+      "longitude": 6.131935,
+      "name_of_location": "Luxembourg",
+      "description": "A beautiful country in Europe.",
+      "photos": [
+        "static/images/luxembourg_1.jpg",
+        "static/images/luxembourg_2.jpg",
+        "static/images/luxembourg_3.jpg"
+      ]
+    }
+  ]
+}
