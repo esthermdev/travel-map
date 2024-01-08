@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from crud import read_data, read_location, add_new_location, delete_location
 
+
 app = FastAPI()
 SOURCE_FILENAME = "locations.json"
 
