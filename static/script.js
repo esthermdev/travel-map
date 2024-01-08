@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const maxHeight = mapContainer.offsetHeight;
 
     // Fetch data from the API
-    fetch('http://127.0.0.1:8000/locations')
+    fetch('/locations')
         .then(response => response.json())
         .then(data => {
             // Process each location and add markers to the map
@@ -88,7 +88,5 @@ document.addEventListener('DOMContentLoaded', function () {
         // Map the latitude (-90 to 90) to Y coordinate (0 to maxHeight)
         return ((90 - latitude) / 180) * maxHeight;
     }
-
-
 });
 

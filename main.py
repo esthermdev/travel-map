@@ -5,10 +5,13 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from crud import read_data, read_location, add_new_location, delete_location
+from starlette.middleware.trustedhost import TrustedHostMiddleware
 
 
 app = FastAPI()
 SOURCE_FILENAME = "locations.json"
+
+app.add_middleware(TrustedHostMiddleware, allowed_hosts=["*"])
 
 app.add_middleware(
     CORSMiddleware,
@@ -29,7 +32,7 @@ class Input(BaseModel):
     description: str
     photos: list
 
-@app.get("/map")
+@app.get("/")
 def read_root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
