@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const maxWidth = mapContainer.offsetWidth;
     const maxHeight = mapContainer.offsetHeight;
 
+    let openLocationContainer = null;
+
     // Fetch data from the API
     fetch('/locations')
         .then(response => response.json())
@@ -62,7 +64,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 marker.addEventListener('click', function () {
                     // Handle marker click (you can show additional information, images, etc.)
-                    locationContainer.style.display = "block";
+                    if (openLocationContainer) {
+                        openLocationContainer.style.display = 'none'
+                    }
+
+                    locationContainer.style.display = (locationContainer.style.display === "none") ? block : "none";
+                    openLocationContainer = locationContainer
         
                     console.log(location.name_of_location + ', ' + location.description);                    
                 });
