@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         openLocationContainer.style.display = 'none'
                     }
 
-                    locationContainer.style.display = (locationContainer.style.display === "none") ? block : "none";
+                    locationContainer.style.display = (locationContainer.style.display === "none") ? "block" : "none";
                     openLocationContainer = locationContainer
         
                     console.log(location.name_of_location + ', ' + location.description);                    
